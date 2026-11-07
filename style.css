@@ -1,0 +1,408 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #160d20;
+    color: #fff4f5;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #ffd2dc;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background:
+        radial-gradient(circle at top, #71334e 0%, transparent 45%),
+        linear-gradient(135deg, #160d20, #35172f, #160d20);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.tag, .small-heading {
+    color: #ffb8c9;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 7vw, 75px);
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+h1 span {
+    color: #ffb7c9;
+    font-family: 'Dancing Script', cursive;
+}
+
+.hero p, .final-section > p {
+    color: #e8cbd8;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.diya {
+    font-size: 48px;
+    margin-top: 45px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 5px #ffac42); }
+    to { filter: drop-shadow(0 0 25px #ffb34c); }
+}
+
+.main-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff8eae, #e84e82);
+    border: none;
+    padding: 14px 28px;
+    color: white;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px #e84e8270;
+}
+
+.section {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 5vw, 45px);
+    color: #ffd0dd;
+    margin: 15px 0 35px;
+}
+
+.subtitle {
+    color: #d6bdcc;
+    margin: -15px 0 30px;
+}
+
+.message-card, .question-card, .attention-card,
+.love-card, .letter {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #ffffff20;
+    border-radius: 25px;
+    background: #ffffff0b;
+    box-shadow: 0 15px 50px #00000030;
+}
+
+.message-card p, .letter p {
+    color: #f1dce5;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.message-card h3, .letter h3 {
+    color: #ffb3c9;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+.options, .attention-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.question-card h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.options button, .attention-card button,
+.love-card button {
+    border: 1px solid #ffabc4;
+    background: #ffabc415;
+    color: #ffe5ed;
+    padding: 13px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.options button:hover, .attention-card button:hover,
+.love-card button:hover {
+    background: #e84e82;
+    transform: translateY(-3px);
+}
+
+#feedback, #needFeedback, #loveReplyText {
+    color: #ffb5cc;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+#nextBtn {
+    margin-top: 15px;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.reason {
+    padding: 30px 15px;
+    border-radius: 20px;
+    border: 1px solid #ffffff20;
+    background: linear-gradient(135deg, #ffffff10, #ff8eae12);
+    color: #ffe2eb;
+    transition: 0.3s;
+}
+
+.reason:hover {
+    transform: translateY(-7px);
+    border-color: #ff9dbb;
+}
+
+.love-card p {
+    margin: 15px 0 25px;
+    color: #e8cbd8;
+}
+
+.letter {
+    text-align: left;
+    padding: 45px;
+}
+
+.letter p {
+    margin: 18px 0;
+}
+
+.letter .signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    text-align: right;
+    color: #ffb3c9;
+}
+
+.final-section {
+    background: radial-gradient(circle, #57283f, #160d20 70%);
+    padding: 120px 20px;
+}
+
+.final-section h2:last-child {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+}
+
+footer {
+    padding: 35px 15px;
+    text-align: center;
+    color: #ffcad9;
+    background: #100916;
+    font-size: 14px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    pointer-events: none;
+    animation: floatUp 7s linear forwards;
+    z-index: 100;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .section {
+        padding: 75px 6%;
+    }
+
+    .message-card, .question-card, .attention-card,
+    .love-card, .letter {
+        padding: 25px 18px;
+    }
+
+    nav {
+        padding: 18px 6%;
+    }
+}
+/* Beautiful romantic cursive font */
+
+h1,
+h1 span {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+}
+
+.section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 700;
+}
+
+.logo,
+.message-card h3,
+.letter h3,
+.letter .signature,
+.final-section h2:last-child {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Romantic Rathna and Mansa background */
+
+body {
+    background-color: #160913;
+    background-image:
+        radial-gradient(ellipse at 15% 15%, #87304d55, transparent 40%),
+        radial-gradient(ellipse at 85% 75%, #9c456344, transparent 40%),
+        linear-gradient(135deg, #160913, #28101f, #190b17);
+    background-attachment: fixed;
+}
+
+/* Names in the background */
+
+.name-watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-15deg);
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(45px, 11vw, 130px);
+    color: #ffb5ca;
+    opacity: 0.055;
+    letter-spacing: 5px;
+}
+
+/* Keep website content above watermark */
+
+nav, section, footer, #hearts {
+    position: relative;
+    z-index: 1;
+}
+
+/* Beautiful footer */
+
+.love-footer {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #1b0b17, #3b142c, #1b0b17);
+    border-top: 1px solid #e9a0b955;
+    box-shadow: 0 -10px 50px #e84e8210;
+}
+
+.love-footer h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(45px, 7vw, 70px);
+    color: #ffd1df;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.love-footer h2 span {
+    color: #ff668f;
+    font-size: 0.8em;
+}
+
+.love-footer p {
+    color: #e8c4d2;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.love-footer h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffc0d2;
+    font-size: 27px;
+    margin: 20px 0 10px;
+}
+
+.footer-hearts {
+    color: #ff8bac;
+    font-size: 27px;
+    letter-spacing: 12px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.footer-divider {
+    width: 100px;
+    height: 1px;
+    margin: 25px auto;
+    background: linear-gradient(to right, transparent, #ffabc5, transparent);
+}
+
+.footer-last {
+    font-family: 'Dancing Script', cursive;
+    font-size: 21px !important;
+    margin-bottom: 25px;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.12); }
+}

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mansarovar ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="name-watermark">RATHNA ♥ MANSA</div>
+
+<nav>
+    <div class="logo">For Mansarovar ❤️</div>
+    <a href="#home">Home</a>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">A Little Surprise For You ✨</span>
+        <h1>Happy Diwali,<br><span>My Beautiful Mansarovar</span></h1>
+        <p>You make my world brighter than a thousand diyas.</p>
+        <a href="#morning" class="main-btn">Open Your Surprise ❤️</a>
+        <div class="diya">🪔 💗 🪔</div>
+    </div>
+</section>
+
+<section class="section" id="morning">
+    <span class="small-heading">A little message</span>
+    <h2>Good Morning, My Love ☀️</h2>
+    <div class="message-card">
+        <p>
+            Good morning, my favourite person! ❤️
+            I hope you woke up with a beautiful smile today.
+            No matter how your day goes, remember that someone
+            is always thinking about you, caring for you and
+            wishing to see you happy.
+        </p>
+        <h3>Have the most beautiful day, Mansarovar! 💕</h3>
+    </div>
+</section>
+
+<section class="section" id="questions">
+    <span class="small-heading">Let's talk</span>
+    <h2>Some Little Questions For You 💌</h2>
+    <p class="subtitle">Answer whatever you feel comfortable answering.</p>
+
+    <div class="question-card">
+        <h3 id="questionText">Did you sleep well, my love? 🥰</h3>
+        <div id="answerOptions" class="options">
+            <button onclick="answerQuestion('Very well ❤️')">Very well ❤️</button>
+            <button onclick="answerQuestion('Not really 🥺')">Not really 🥺</button>
+            <button onclick="answerQuestion('I missed you 💗')">I missed you 💗</button>
+        </div>
+        <p id="feedback"></p>
+        <button class="main-btn" id="nextBtn" onclick="nextQuestion()">Next Question ➜</button>
+    </div>
+</section>
+
+<section class="section">
+    <span class="small-heading">From my heart</span>
+    <h2>10 Reasons Why I Love You ❤️</h2>
+
+    <div class="reasons">
+        <div class="reason">Your beautiful smile 😊</div>
+        <div class="reason">Your cute little talks 💕</div>
+        <div class="reason">The way you care 🥹</div>
+        <div class="reason">Your beautiful heart ❤️</div>
+        <div class="reason">Your lovely presence 🌸</div>
+        <div class="reason">Your little craziness 😂</div>
+        <div class="reason">Your kindness 🦋</div>
+        <div class="reason">The happiness you bring ✨</div>
+        <div class="reason">Every little thing about you 💗</div>
+        <div class="reason">Simply because you're YOU! 🫶</div>
+    </div>
+</section>
+
+<section class="section">
+    <span class="small-heading">Tell me what you need</span>
+    <h2>How Can I Make You Smile Today? 🥺</h2>
+
+    <div class="attention-card">
+        <button onclick="chooseNeed('A long hug 🤗')">I need a long hug 🤗</button>
+        <button onclick="chooseNeed('More attention ❤️')">I need more attention ❤️</button>
+        <button onclick="chooseNeed('Cute messages 💌')">Send me cute messages 💌</button>
+        <button onclick="chooseNeed('Make me laugh 😂')">Make me laugh 😂</button>
+        <button onclick="chooseNeed('Just stay with me 🫂')">Just stay with me 🫂</button>
+        <p id="needFeedback"></p>
+    </div>
+</section>
+
+<section class="section">
+    <span class="small-heading">One little challenge</span>
+    <h2>Who Loves More? 💘</h2>
+
+    <div class="love-card">
+        <h3>I love you more! ❤️</h3>
+        <p>Do you agree with me?</p>
+        <button onclick="loveReply('Yes, you win! 😘')">Yes, you win 😘</button>
+        <button onclick="loveReply('No, I love you more! 😍')">No, I love you more 😍</button>
+        <button onclick="loveReply('We both love each other! 💗')">We both win 💗</button>
+        <h3 id="loveReplyText"></h3>
+    </div>
+</section>
+
+<section class="section">
+    <span class="small-heading">A letter from me</span>
+    <h2>My Dearest Mansarovar 💌</h2>
+
+    <div class="letter">
+        <p>My dear Mansarovar,</p>
+
+        <p>
+            I don't know how to explain how special you are to me.
+            Your happiness matters to me more than you can imagine.
+            Even on your difficult days, I want to be someone who
+            makes you feel safe, loved and understood.
+        </p>
+
+        <p>
+            I may not always have the perfect words, but I promise
+            to keep trying to make you smile. I want to give you
+            attention, care, respect and countless beautiful memories.
+        </p>
+
+        <p>
+            Thank you for being you. You are my favourite notification,
+            my sweetest thought and one of the best parts of my life.
+        </p>
+
+        <h3>I LOVE YOU MORE ❤️</h3>
+        <p class="signature">Forever yours 💕</p>
+    </div>
+</section>
+
+<section class="section final-section">
+    <span class="small-heading">My final wish</span>
+    <h2>Happy Diwali, My Love! 🪔</h2>
+
+    <p>
+        May your life always shine with happiness,
+        peace, beautiful dreams and endless smiles.
+    </p>
+
+    <button class="main-btn" onclick="finalSurprise()">
+        One Last Surprise 💖
+    </button>
+
+    <h2 id="finalMessage"></h2>
+</section>
+
+
+<footer class="love-footer">
+    <div class="footer-hearts">♡ ♥ ♡</div>
+
+    <h2>Rathna <span>♥</span> Mansa</h2>
+
+    <p>Every heartbeat has a reason, and mine is you. ❤️</p>
+
+    <div class="footer-divider"></div>
+
+    <h3>Forever yours, Rathna 💍</h3>
+    <p class="footer-last">With all my love, just for you, Mansa.</p>
+
+    <div class="footer-hearts">♥ ♡ ♥</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
